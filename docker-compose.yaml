@@ -47,6 +47,9 @@ services:
         - 5140:5140
         # Test UDP
         - 5140:5140/udp
+        # Test 514 port 
+        - 514:514/udp
+        - 514:514
 networks:
     graylog:
       driver: bridge
